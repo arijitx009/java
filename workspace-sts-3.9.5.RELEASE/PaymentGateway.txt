@@ -1,11 +1,4 @@
-/**
- * This class is a payment gateway class that assists in balance transfers
- */
 
-/**
- * @author subhamsa
- *
- */
 public class PaymentGateway {
 	
 	//we will withdraw and see if it returns or false,
