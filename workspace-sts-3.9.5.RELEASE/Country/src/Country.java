@@ -1,5 +1,5 @@
 
-public class Countr {
+public class Country {
 	String name;
 	int population;
 	double area;
