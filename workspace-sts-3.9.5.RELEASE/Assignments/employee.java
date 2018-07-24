@@ -3,9 +3,9 @@ class Employee
 {
 	String name;
 	String id;
-	double monthlyBasic,monthlyGross,monthlyDeductions,PF,ESIC,protax,monthlyTake,annualTake;
+	double monthlyBasic,monthlyGross,monthlyDeductions,PF,ESIC,protax,monthlyTake,annualTake; // initializing the variables and data types
 	
-	void accept()
+	void accept() //function to print the name id and the monthly basic of the employee
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the name of the employee");
@@ -16,16 +16,16 @@ class Employee
 		monthlyBasic=sc.nextDouble();
 		
 	}
-	double getAnnualBasic()
+	double getAnnualBasic() //function to get the annual basic
 	{
 		return 12*monthlyBasic;
 	}
-	double getMonthlyGrossSalary()
+	double getMonthlyGrossSalary() //function to get gross salary
 	{
 		monthlyGross=monthlyBasic+(50*monthlyBasic/100)+1250+800;
 		return monthlyGross;
 	}
-	double getMonthlyDeductions()
+	double getMonthlyDeductions() //function to get salary after monthly deductions
 	{
 		PF=0.1*monthlyBasic;
 		ESIC=0.0475*monthlyBasic;
@@ -47,17 +47,17 @@ class Employee
 		}
 		
 	}
-	double getMonthlyTakeHome()
-	{
+	double getMonthlyTakeHome() //function to get the amount of money allowed to take home per month
+ 	{
 		monthlyTake=monthlyGross-monthlyDeductions;
 		return monthlyTake;
 	}
-	double getAnnualTakeHome()
+	double getAnnualTakeHome() //function to get the amount of money allowed to take home.
 	{
 		annualTake=12*monthlyTake;
 		return annualTake;
 	}
-	void display()
+	void display() //display function to display the results
 	{
 		System.out.println("Name"+name);
 		System.out.println("ID"+id);
@@ -71,7 +71,7 @@ class Employee
 	}
 	
 }
-class Main
+class Main //main method
 {
 	public static void main(String args[])
 	{
