@@ -3,11 +3,11 @@ public class BankTest {
 
 	public static void main(String[] args) {
 		
-		MMBankFactory alfaiz = new MMBankFactory();
+		MMBankFactory mm = new MMBankFactory();
 		
-		MMBankFactory saif = new MMBankFactory();
+		MMBankFactory mm1 = new MMBankFactory();
 		
-		SavingAcc alfaizSavings = alfaiz.getNewSavingAccount("Alfaiz", 15200, 54000, true);//initailization of saving account
+		SavingAcc alfaizSavings = alfaiz.getNewSavingAccount("Arijit", 15200, 54000, true);//initailization of saving account
 		System.out.println("After Initialization");
 		System.out.println(alfaizSavings);
 		System.out.println("");
