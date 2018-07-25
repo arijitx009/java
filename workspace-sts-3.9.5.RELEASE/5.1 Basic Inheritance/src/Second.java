@@ -3,12 +3,12 @@ public class Second {
 
 		int j=0;
 		
-		Second()
+		Second() // non parameterized constructor
 		{
 			System.out.println("Second Class");
 		}
 		
-		void disp()
+		void disp() //display function
 		{
 			System.out.println("Display of Second class");
 		}
