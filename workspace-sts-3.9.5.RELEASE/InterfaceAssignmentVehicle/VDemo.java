@@ -10,7 +10,7 @@ public class VDemo {
 		TwoWheeler two=new TwoWheeler();
 		vehicles[1]=two;
 		ThreeWheeler three=new ThreeWheeler();
-		vehicles[1]=three;
+		vehicles[2]=three;
 		for(int i=0;i<3;i++) {
 			if(vehicles[i]==three) {
 				vehicles[i].start();
