@@ -1,5 +1,5 @@
 
-public interface A {
-	void display();
+public interface A {				
+	void display();		//creating an undefined function
 
 }
